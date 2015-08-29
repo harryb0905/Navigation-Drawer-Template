@@ -11,6 +11,7 @@ Add .h and .m files into new group - SWRevealViewController in Xcode project\
 Create bridging header\
 Add #import \'93SWRevealViewController.h\'94 into .h file\
 Add empty view controller = rear\
+Change class to SWRevealViewController\
 Add menu controller w/table view for each item\
 Set class = menu controller\
 \
@@ -50,7 +51,7 @@ Menu controller code:\
 
 \f0\fs24 \cf0 \CocoaLigature1 \
 \
-Change class to sidebar view controller\
+\
 Control-drag to menu view controller\
 Select reveal view controller set controller\
 Change custom segue identifier to sw_rear\
@@ -106,7 +107,7 @@ Add code:\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
 
 \f0\fs24 \cf0 \CocoaLigature1 \
-\
+Add navigation view controllers\
 Drag from each cell in the menu controller to the navigation controller of each view\
 Choose push controller for each one\
 Add the same code into viewDidLoad\
@@ -116,8 +117,9 @@ VC with a normal VC and link class to respective file with same code but differe
 Into viewDidLoad of first VC:\
 self.revealViewController().rearViewRevealWidth = 62\
 (changes width of menu)\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
 
-\f1\fs22 \CocoaLigature0 \
+\f1\fs22 \cf0 \CocoaLigature0 \
 \pard\tx529\pardeftab529\pardirnatural
 \cf0 \
 }
